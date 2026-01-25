@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trojan Whore</title>
+  <meta name="description" content="Trojan Whore – cybergrind / noisecore / goregrind / gorenoise" />
+
+  <!-- Fira Code font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background: #000;
+      color: #fff;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    header {
+      padding: 5rem 1rem 4rem;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      letter-spacing: 0.4rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #111;
+      position: sticky;
+      top: 0;
+      background: #000;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid #fff;
+      padding-left: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+
+    .releases, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      border: 1px solid #111;
+      padding: 1rem;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+      margin-bottom: 1rem;
+      filter: grayscale(100%) contrast(120%);
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    iframe {
+      width: 100%;
+      min-height: 240px;
+      border: none;
+      filter: grayscale(100%) contrast(120%);
+    }
+
+    a {
+      color: #fff;
+    }
+
+    footer {
+      border-top: 1px solid #111;
+      padding: 3rem 1rem;
+      text-align: center;
+      font-size: 0.75rem;
+      opacity: 0.6;
+    }
+
+    /* subtle noise effect */
+    body::after {
+      content: "";
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+    <img src="images/logo.png" alt="Trojan Whore logo" style="max-width:420px; width:90%; height:auto;" />
+    <p>cybergrind / noisecore / goregrind / gorenoise</p>
+  </header>
+
+  <nav>
+    <a href="#about">about</a>
+    <a href="#releases">releases</a>
+    <a href="#videos">videos</a>
+    <a href="#photos">photos</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Trojan Whore is a cybergrind / noisecore / goregrind / gorenoise project.
+      No melody. No comfort. Digital blast abuse, low fidelity violence,
+      and decomposed noise.
+    </p>
+  </section>
+
+    <section id="discography">
+    <h2>Discography</h2>
+    <div class="releases">
+
+      <div class="card">
+        <h3>Release Title</h3>
+        <p>2025 — Digital</p>
+        <iframe style="border:0; width:100%; height:120px;" src="https://bandcamp.com/EmbeddedPlayer/album=ALBUM_ID/size=small/bgcol=000000/linkcol=ffffff/transparent=true/" seamless></iframe>
+        <p><a href="#">bandcamp</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Release Title</h3>
+        <p>2024 — Tape</p>
+        <iframe style="border:0; width:100%; height:120px;" src="https://bandcamp.com/EmbeddedPlayer/album=ALBUM_ID/size=small/bgcol=000000/linkcol=ffffff/transparent=true/" seamless></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Videos</h2>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+  </section>
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <div class="gallery">
+      <div class="card"><img src="images/photo1.jpg" alt="Trojan Whore photo" /></div>
+      <div class="card"><img src="images/photo2.jpg" alt="Trojan Whore photo" /></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact / Links</h2>
+    <p>Email: your@email.com</p>
+    <p>
+      <a href="#">Bandcamp</a> / <a href="#">YouTube</a> / <a href="#">Instagram</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© Trojan Whore</p>
+  </footer>
+
+</body>
+</html>
