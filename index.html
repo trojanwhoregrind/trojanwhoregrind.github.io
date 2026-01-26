@@ -80,9 +80,10 @@
     }
 
     .releases, .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
+      display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 2rem;
     }
 
     .card {
@@ -92,7 +93,7 @@
 
     .card img {
       width: 100%;
-      max-width: 220px;
+      max-width: 300px;
       margin: 0 auto 1rem;
       display: block;
       filter: none;
